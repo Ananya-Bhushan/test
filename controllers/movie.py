@@ -3,7 +3,12 @@ from app import app
 from models.movie import Movie
 from flask import jsonify, request
 
- @app.route('/v1/movie/<int:movie_id>', methods=['GET'])
+app = Flask(__name__)
+
+class controller:
+ def __init__(self):
+   pass
+
  def get_movie(movie_id):
      movie = Movie.query.get(movie_id)
      if movie:
@@ -17,5 +22,15 @@ from flask import jsonify, request
          })
      else:
          return jsonify({'error': 'Movie not found'}), 404
+      
+   @app.route('/v1/movie/<int:movie_id>', methods=['GET'])
+   def get_movie(movie_id):
+    Controller=controller(movie_id)
+    return Controller.get_movie(movie_id)
+   
+   
+   if __name__ == '__main__':
+    app.run()
+   
 
 
