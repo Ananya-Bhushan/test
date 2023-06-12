@@ -12,3 +12,5 @@ view.py This file represents all the records fetched within the model.Raw movie 
 API Definition
 
 GET '/v1/movie/int:movie_id' HOST: : RESPONSE: { "id":<movie_id>, "title":<movie_name>, "poster_path":, "language":, "overview":<movie_description>, "release_date": }
+
+
