@@ -1,4 +1,4 @@
-# MVC
+# API
 This project is about building a REST API using Flask,MySQL and MVC (Model-View-Controller) pattern. The API provides movie information based on the provided movie ID.
 
 Tech Stack 1.Flask 2.MySQL 3.Python
